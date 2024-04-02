@@ -1,0 +1,18 @@
+{
+  "name": "cicd-test-app",
+  "packageManager": "yarn@4.1.1",
+  "dependencies": {
+    "@mjpowersjr/cicd-test-sdk": "0.0.7"
+  },
+  "scripts": {
+    "build": "rimraf dist && tsc",
+    "start": "ts-node src/index.ts"
+  },
+  "devDependencies": {
+    "@tsconfig/node20": "^20.1.4",
+    "@types/node": "^20.12.2",
+    "rimraf": "^5.0.5",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.3"
+  }
+}
